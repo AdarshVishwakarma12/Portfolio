@@ -1,0 +1,32 @@
+html {
+    overflow-y: scroll; /* Always show a vertical scrollbar */
+}
+
+body {    
+    padding: 9%;
+    margin: 10px 10 0 10px;
+
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover, a:active {
+    color: black;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.scroll-margin-container {
+    scroll-margin-right: 20px;
+    margin-right: 20px;
+}

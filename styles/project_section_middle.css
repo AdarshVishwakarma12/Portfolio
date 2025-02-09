@@ -1,0 +1,21 @@
+.all-projects {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.all-projects .project-links .links-container {
+    display: flex;
+    flex-direction: row;
+
+    column-gap: 15px;
+    list-style-type: none;
+
+    margin: 0;
+    padding-left: 0;
+}
+
+hr {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}

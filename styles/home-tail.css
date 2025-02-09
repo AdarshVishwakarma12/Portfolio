@@ -1,0 +1,14 @@
+.section-tail .connection-links .links-container {
+    display: flex;
+    flex-direction: row;
+
+    column-gap: 15px;
+    list-style-type: none;
+
+    margin: 0;
+    padding-left: 0;
+}
+
+.section-tail .connection-links .links-container .link-item .link:hover {
+    color: #878b8f;
+}
