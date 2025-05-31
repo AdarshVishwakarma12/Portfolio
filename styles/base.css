@@ -1,3 +1,20 @@
+:root {
+    --body-background-color: white;
+    --body-color: black;
+    --a-color: black;
+    --terminal-header-background: #e0e8f0;
+    --terminal-background-color: rgb(252, 248, 248);
+    --terminal-text-color: black;
+}
+body.theme-dark {
+    --body-background-color: black;
+    --body-color: white;
+    --a-color: white;
+    --terminal-header-background: #2c2f32;
+    --terminal-background-color: rgb(34, 31, 31);
+    --terminal-text-color: white;
+}
+
 html {
     overflow-y: scroll; /* Always show a vertical scrollbar */
 }
@@ -8,18 +25,21 @@ body {
 
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
+
+    background-color: var(--body-background-color);
+    color: var(--body-color);
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--a-color);
 
     font-size: medium;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 a:hover, a:active {
-    color: black;
+    color: var(--a-color);
 }
 
 body {

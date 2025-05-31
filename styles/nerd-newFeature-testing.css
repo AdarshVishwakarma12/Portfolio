@@ -4,8 +4,8 @@
 }
 
 #terminal-window span::selection {
-  background: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 #terminal-window {
@@ -22,7 +22,7 @@
 }
 
 .header {
-  background: #e0e8f0;
+  background: var(--terminal-header-background);
   height: 30px;
   border-radius: 8px 8px 0 0;
   padding-left: 10px;
@@ -58,8 +58,8 @@
 
   position: absolute;
 
-  background-color: rgb(252, 248, 248);
-  color: black;
+  background-color: var(--terminal-background-color);
+  color: var(--terminal-text-color);
 
   top: 30px;
   bottom: 0;

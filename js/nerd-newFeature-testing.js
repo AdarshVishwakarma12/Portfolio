@@ -76,9 +76,7 @@ terminal.addEventListener('keydown', (keyValue) => {
         let contentInputSpan = inputSpan.innerText.toLowerCase();
         contentInputSpan = contentInputSpan.trim();
 
-        if(contentInputSpan !== 'history') {
-            currentSessionHistory.push(contentInputSpan);
-        }
+        currentSessionHistory.push(contentInputSpan);
         autoCompleteFromHistory = 0;
 
         // Preprocessing (string to array)
@@ -370,7 +368,13 @@ function subHandleCommandListDirectory(folderToCheck) {
 function handlecommandHistory() {
     res = "";
     iterator = 1;
+    let totalLength = currentSessionHistory.length
     for(let x of currentSessionHistory) {
+        
+        if(iterator === totalLength) {
+            break;
+        }
+
         res += `
         <div style="margin-left: 10px;">
             <table>
