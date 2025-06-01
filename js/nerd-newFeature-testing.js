@@ -370,7 +370,7 @@ function handlecommandHistory() {
     iterator = 1;
     let totalLength = currentSessionHistory.length
     for(let x of currentSessionHistory) {
-        
+
         if(iterator === totalLength) {
             break;
         }
@@ -398,64 +398,38 @@ function handleCommandClear() {
 function handleCommandHelp() {
     return `
     <div style="margin-left: 10px;">
-        <table>
-            <tr>
-                <td> 
+
+                <div> 
                     <strong> pwd </strong>
-                </td>
-                <td> 
                     - Print the current working directory.
-                </td>
-            </tr>
-            <tr>
-                <td> 
+                </div>
+                <div> 
                     <strong> ls FILENAME </strong>
-                </td>
-                <td> 
                     - List files and directories.
-                </td>
+                </div>
             </tr>
             <tr>
-                <td> 
+                <div> 
                     <strong> cd[path] </strong>
-                </td>
-                <td> 
                     - Change directory.
-                </td>
-            </tr>
-            <tr>
-                <td> 
+                </div>
+                <div> 
                     <strong> cat [file] </strong>
-                </td>
-                <td> 
                     - Display the contents of a file.
-                </td>
-            </tr>
-            <tr>
-                <td> 
+                </div>
+
+                <div> 
                     <strong> history </strong>
-                </td>
-                <td> 
                     - Show previously entered commands.
-                </td>
-            </tr>
-            <tr>
-                <td> 
+                </div>
+                <div> 
                     <strong> clear </strong>
-                </td>
-                <td> 
                     - Clear the terminal screen.
-                </td>
-            </tr>
-            <tr>
-                <td> 
+                </div>
+                <div> 
                     <strong> help </strong>
-                </td>
-                <td> 
                     - Show this help message.
-                </td>
-            </tr>
-        </table>
+                </div>
     </div>
     `;
 }
