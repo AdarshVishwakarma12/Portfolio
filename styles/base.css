@@ -5,6 +5,7 @@
     --terminal-header-background: #e0e8f0;
     --terminal-background-color: rgb(252, 248, 248);
     --terminal-text-color: black;
+    --zoom-value: 75%;
 }
 body.theme-dark {
     --body-background-color: black;
@@ -13,6 +14,15 @@ body.theme-dark {
     --terminal-header-background: #2c2f32;
     --terminal-background-color: rgb(34, 31, 31);
     --terminal-text-color: white;
+}
+
+body.desktop-mode {
+    --zoom-value: 100%;
+}
+
+
+.container-zoom {
+    zoom: var(--zoom-value);
 }
 
 html {
@@ -50,3 +60,4 @@ body {
     scroll-margin-right: 20px;
     margin-right: 20px;
 }
+

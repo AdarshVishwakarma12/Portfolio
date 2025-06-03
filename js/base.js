@@ -13,3 +13,19 @@ applyTheme(prefersDark); // MediaQueryListener
 
 // Listen for changes (e.g., user switches system theme)
 prefersDark.addEventListener('change', applyTheme); // No need to pass the argument/parameter?
+
+// Adding class desktop-mode If the user is at the desktop mode!
+function checkDesktopMode() {
+    const body = document.body;
+    if (window.innerWidth >= 1024) {
+      body.classList.add("desktop-mode");
+    } else {
+      body.classList.remove("desktop-mode");
+    }
+  }
+
+  // Initial check
+  checkDesktopMode();
+
+  // Re-check on resize
+  window.addEventListener("resize", checkDesktopMode);
