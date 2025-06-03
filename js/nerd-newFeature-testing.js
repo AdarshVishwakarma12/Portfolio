@@ -456,7 +456,7 @@ function aboutTXT() {
 
 function resumeTXT() {
     return `
-        <div> <a href="/data/adarsh_resume_updated.pdf" target="_blank" style="text-decoration: underline; "> Resume </a> </div>
+        <div> <a href="/data/adarsh_resume.pdf" target="_blank" style="text-decoration: underline; "> Resume </a> </div>
     `;
 }
 
